@@ -3,77 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>PROHub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <section>
-        <h1>Professional Resource Organization Hub</h1>
-        <a href="login.html">Login</a>
+    <header id="header">
+        <h1>Prohub</h1>
+        <div class="auth-buttons">
+            <a href="register.html">Register</a>
+            <a href="login.html" class="login-button">Login</a>
+        </div>
+    </header>
 
+    <section class="search-section">
+        <h1 class="search-title">Find the perfect professional for you</h1>
+        <p class="search-subtitle">Get free quotes within minutes</p>
+        
+        <form class="search-form">
+            <input type="text" class="service-input" placeholder="What service are you looking for?">
+            <input type="text" class="postcode-input" placeholder="Postcode">
+            <button type="submit" class="search-button">Search</button>
+        </form>
+        
+        <p class="popular-services">
+            Popular: House Cleaning, Web Design, Personal Trainers
+        </p>
     </section>
 
-    <section class="Discover">
-        <h2 class="headings">
-            Discover
-        </h2>
+    <section class="discover">
+        <h2 class="headings">Discover</h2>
         <div class="choices">
-            <div>
-                <a href="home&garden.html">Home & garden</a>
+            <div class="choice">
+                <a href="home&garden.html">
+                    <i class="fas fa-home"></i>
+                    <p>Home<br>& Garden</p>
+                </a>
             </div>
-            <div>
-                <a href="wealth&wellbeing.html">Wealth & wellbeing</a>
+            <div class="choice">
+                <a href="health&wellbeing.html">
+                    <i class="fas fa-heart"></i>
+                    <p class="health">Health<br>& Wellbeing</p>
+                </a>
             </div>
-            <div>
-                <a href="wedding&event.html">Weddngs & Event</a>
+            <div class="choice">
+                <a href="weddings&events.html">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Weddings<br>& Events</p>
+                </a>
             </div>
-            <div>
-                <a href="businessServices.html">Business Services</a>
+            <div class="choice">
+                <a href="businessServices.html">
+                    <i class="fas fa-briefcase"></i>
+                    <p>Business<br>Services</p>
+                </a>
             </div>
-            <div>
-                <a href="lesson&training.html">Lesson & Training</a>
+            <div class="choice">
+                <a href="lessons&training.html">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <p>Lessons<br>& Training</p>
+                </a>
             </div>
-            <div>
-                <a href="otherServices">Other Services</a>
+            <div class="choice">
+                <a href="otherServices.html">
+                    <i class="fas fa-ellipsis-h"></i>
+                    <p>Other<br>Services</p>
+                </a>
             </div>
-
         </div>
 
-    </section>
-
-    <section class="contact">
-        <h2 class="headings">
-            Contact Us
-        </h2>
-
-        <div>
-            <p>Email: prohub@gmail.com</p>
-            <p>Phone: 123-4567-8910</p>
-        </div>
-        <div class="contact-form"></div>
-            <form>
-                <div class="form-group">
-                    <label for="first-name">First name*</label>
-                    <input type="text" id="first-name" name="first-name" required>
+        <div class="image-container">
+            <div class="images">
+                <div class="image-item">
+                    <img src="image/Car.png" alt="Car Maintenance">
+                    <p>Car Maintenance</p>
                 </div>
-                <div class="form-group">
-                    <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="last-name">
+                <div class="image-item">
+                    <img src="image/Finance.png" alt="Finance">
+                    <p>Finance</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="image-item">
+                    <img src="image/gardening.png" alt="Gardening">
+                    <p>Gardening</p>
                 </div>
-                <div class="form-group">
-                    <label for="message">What can I help you with?</label>
-                    <div class="fixed-size">
-                        <textarea id="message" name="message"></textarea>
-                    </div>
+                <div class="image-item">
+                    <img src="image/Plumbing.png" alt="Plumbing">
+                    <p>Plumbing</p>
                 </div>
-                <button type="submit">Submit</button>
-            </form>
+                <div class="image-item">
+                    <img src="image/roofing.png" alt="Roofing">
+                    <p>Roofing</p>
+                </div>
+                <div class="image-item">
+                    <img src="image/tutor.png" alt="Private Tutor">
+                    <p>Private Tutor</p>
+                </div>
+                <!-- Duplicate the images here for seamless scrolling -->
+                <div class="image-item">
+                    <img src="image/Car.png" alt="Car Maintenance">
+                    <p>Car Maintenance</p>
+                </div>
+                <div class="image-item">
+                    <img src="image/Finance.png" alt="Finance">
+                    <p>Finance</p>
+                </div>
+                <div class="image-item">
+                    <img src="image/gardening.png" alt="Gardening">
+                    <p>Gardening</p>
+                </div>
+                <div class="image-item">
+                    <img src="image/Plumbing.png" alt="Plumbing">
+                    <p>Plumbing</p>
+                </div>
+                <div class="image-item">
+                    <img src="image/roofing.png" alt="Roofing">
+                    <p>Roofing</p>
+                </div>
+                <div class="image-item">
+                    <img src="image/tutor.png" alt="Private Tutor">
+                    <p>Private Tutor</p>
+                </div>
+            </div>
         </div>
     </section>
     
+    <section class="contact">
+        <h2 class="headings">Contact Us</h2>
+    
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 123 Professional St, Cebu City, Philippines</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> support@prohub.com</p>
+                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +63 32 3456 7890</p>
+                <p><i class="fas fa-mobile-alt"></i> <strong>Mobile:</strong> +63 912 345 6789</p>
+                <p><i class="fas fa-clock"></i> <strong>Office Hours:</strong> Mon-Fri, 9:00 AM - 6:00 PM</p>
+            </div>
+    
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="first-name">First Name*</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">What can we help you with?</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
 </body>
 </html>

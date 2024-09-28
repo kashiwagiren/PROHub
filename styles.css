@@ -1,6 +1,428 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #1e1e1e;
+    color: #ddd;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 50px;
+}
+
+/* Sticky Header Styles */
+#header {
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Keep it at the top */
+    left: 0;
+    right: 0;
+    background-color: #1e1e1e; /* Match your header background */
+    transition: top 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure the header is above other content */
+}
+
+/* Hide the header when scrolling down */
+#header.hidden {
+    top: -100px; /* Move header off-screen */
+}
+
+header {
+    margin-top: -20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items to the edges */
+    align-items: center; /* Center items vertically */
+    background-color: #1e1e1e; /* Background color for the header */
+    padding: 20px; /* Padding around the header */
+}
+
+header h1 {
+    color: #fff; /* Header text color */
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.auth-buttons {
+    display: flex; /* Use flexbox to align buttons */
+    gap: 15px; /* Space between the buttons */
+}
+
+.auth-buttons a {
+    color: #6ea4f5;
+    text-decoration: none;
+    padding: 12px 25px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-width: 100px; /* Set minimum width for the buttons */
+    text-align: center; /* Center the text */
+    width: 120px; /* Set fixed width for both buttons */
+}
+
+.auth-buttons a:hover {
+    background-color: #6ea4f5;
+    color: #fff;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #6ea4f5;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #c9d8f7;
+}
+
+/* Header Section */
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+a[href="login.html"] {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6ea4f5;
+    color: #1e1e1e;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a[href="login.html"]:hover {
+    background-color: #91bbfc;
+    color: #fff;
+}
+a[href="register.html"] {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #6ea4f5;
+    color: #1e1e1e;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a[href="register.html"]:hover {
+    background-color: #91bbfc;
+    color: #fff;
+}
+
+
+/* New Search Section */
+.search-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.search-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #504848;
+    margin-bottom: 10px;
+}
+
+.search-subtitle {
+    font-size: 1.2rem;
+    color: #6c6c6c;
+    margin-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.search-button {
+    padding: 12px 25px; /* Keep existing padding */
+    background-color: #6ea4f5;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+    width: 120px; /* Maintain the width */
+    height: 50px;
+}
+
+.service-input {
+    padding: 12px 20px; /* Match the button height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Adjust font size to match button */
+    height: 50px; /* Set a fixed height to match the button height */
+    width: 300px; /* Set a longer width for service input */
+}
+
+.postcode-input {
+    padding: 12px 20px; /* Match the button height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1rem; /* Adjust font size to match button */
+    height: 50px; /* Set a fixed height to match the button height */
+    width: 150px; /* Set a shorter width for postcode input */
+}
+
+.service-input:focus, .postcode-input:focus {
+    border-color: #6ea4f5; /* Change border color on focus */
+}
+
+
+
+.search-button:hover {
+    transform: scale(1.01);
+}
+
+.popular-services {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #6c6c6c;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .service-input, .postcode-input {
+        width: 100%;
+    }
+}
+
+/* Discover Section */
+.Discover {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.headings {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.choice i {
+    background-color: #8e8787;
+    border-radius: 12px;
+    padding: 10px; /* Adjusted padding to make the icons smaller */
+    font-size: 20px; /* Smaller size for the icons */
+    color: rgb(235, 224, 224); /* Choose a color for your icons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50px; /* Smaller width */
+    height: 50px; /* Smaller height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover i {
+    transform: scale(1.1);
+}
+.choice .health{
+    margin-left: -20px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.choice p {
+    margin-left: -9px;
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .choices {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.image-container {
+    margin-top: 30px;
+    width: 100%; /* Set width as needed */
+    overflow: hidden; /* Hide overflow to prevent scroll bars */
+    position: relative; /* Allow absolute positioning for child */
+}
+
+.images {
+    display: flex; /* Align images in a row */
+    animation: scroll-left 50s linear infinite; /* Increased animation duration for slower scroll */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column; /* Stack image and label vertically */
+    align-items: center; /* Center the items */
+    margin-right: 50px; /* Space between images */
+}
+
+.images img {
+    width: 500px; /* Increased width for larger images */
+    border-radius: 10px;
+}
+
+/* Keyframes for scrolling effect */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen to the left */
+    }
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    max-width: 2000px;
+    margin: 0 auto;
+    color: #bbb;
+}
+
+.contact h2 {
+    margin-bottom: 25px;
+    color: #ddd;
+    text-align: center;
+}
+
+/* Two-column layout for contact info and form */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* Contact Information Styles */
+.contact-info {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 15px;
+    
+}
+
+.contact-info i {
+    color: #6ea4f5;
+    margin-right: 10px;
+    margin-left: 80px;
+}
+
+
+/* Contact Form Styles */
+.contact-form {
+    flex: 1;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 10px;
+    width: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+label {
+    font-weight: bold;
+    color: #bbb;
+    margin-bottom: 1px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 9px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #eee;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #6ea4f5;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #6ea4f5;
+    color: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.1rem;
+    width: 500px;
+}
+
+button:hover {
+    background-color: #91bbfc;
+    color: #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
