@@ -93,4 +93,4 @@ Finding reliable professionals can be a daunting task. ProHub simplifies this pr
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. - see the [LICENSE](LICENSE) File for details.
