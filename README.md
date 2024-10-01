@@ -14,7 +14,7 @@ This platform aims to streamline the process of hiring qualified experts while f
 4. Request Services: Contact the professional directly via the platform to request their services.
 5. Leave Feedback: After the service, you can leave a rating and review to help others find reliable professionals.
 
-#For Professionals:
+### For Professionals:
 1. Sign Up / Log In: Register and complete your profile, ensuring to upload all necessary credentials for verification.
 2. Credential Verification: Submit your qualifications for review. Only verified professionals can offer their services on the platform.
 3. List Your Services: Specify the services you provide and make your profile visible to potential clients.
