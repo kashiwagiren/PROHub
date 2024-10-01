@@ -8,6 +8,7 @@
 - [How ProHub Works](#how-prohub-works)
   - [For Clients](#for-clients)
   - [For Professionals](#for-professionals)
+- [How the Website Should Look](#how-the-website-should-look)
 - [Next Steps](#next-steps)
 - [Acknowledgements](#acknowledgements)
 - [License](#license)
@@ -21,7 +22,6 @@ ProHub is a web-based platform designed to connect clients with verified profess
 Professionals using ProHub undergo a credential verification process to ensure quality service. Not only can clients seek help, but professionals themselves can use the platform to find services from other skilled experts, creating a collaborative environment.
 
 This platform aims to streamline the process of hiring qualified experts while fostering a community of professionals ready to share their skills and knowledge.
-
 
 ---
 
@@ -64,6 +64,18 @@ Finding reliable professionals can be a daunting task. ProHub simplifies this pr
 3. **List Your Services**: Specify the services you offer and make your profile visible to potential clients.
 4. **Receive Service Requests**: Clients will reach out with job requests, allowing you to negotiate terms.
 5. **Get Reviewed**: Once the service is completed, clients leave feedback to help build your reputation.
+
+---
+
+## How the Website Should Look
+
+- **Modern and Clean Design**: The website will feature a minimalist aesthetic with a dark theme, utilizing colors like black and dark gray to provide a sleek appearance.
+- **User-Friendly Navigation**: An intuitive navigation menu that allows users to easily access different sections of the site, such as searching for professionals, viewing service categories, and accessing their profiles.
+- **Responsive Layout**: The design will be fully responsive, ensuring optimal viewing and interaction experience on all devices, including desktops, tablets, and smartphones.
+- **Professional Profiles**: Each professional's profile will prominently display their name, photo, credentials, and ratings, making it easy for clients to assess their qualifications.
+- **Search Functionality**: A robust search bar at the top of the homepage for clients to quickly find services or professionals based on keywords and filters.
+- **Client Reviews and Ratings**: A section dedicated to showcasing client feedback on professional profiles, enhancing trust and transparency.
+- **Engaging Call-to-Action Buttons**: Clear and prominent buttons for signing up, logging in, and requesting services, encouraging user engagement.
 
 ---
 
