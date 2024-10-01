@@ -1,9 +1,5 @@
 # PROHUB - PROFESSIONAL RESOURCE ORGANIZATION HUB
 
-ProHub is a web-based platform designed to connect clients with verified professionals across various industries in the Philippines. It solves the challenge of finding skilled professionals for services such as home repairs, automotive services, and more, providing a reliable alternative to DIY solutions.
-
-Professionals using ProHub undergo a thorough credential verification process to ensure quality service. This platform streamlines the process of hiring qualified experts while fostering a community of professionals ready to share their skills and knowledge.
-
 ---
 
 ## Quick Access Index
@@ -22,8 +18,9 @@ Professionals using ProHub undergo a thorough credential verification process to
 
 ## Introduction
 
-ProHub is a one-stop platform that connects clients to professionals, making it easy for clients to find and contact verified experts in various fields. It ensures quality and trustworthy service by requiring professionals to pass a credential verification process before being listed.
+ProHub is a web-based platform designed to connect clients with verified professionals across various industries in the Philippines. It solves the challenge of finding skilled professionals for services such as home repairs, automotive services, and more, providing a reliable alternative to DIY solutions.
 
+Professionals using ProHub undergo a thorough credential verification process to ensure quality service. This platform streamlines the process of hiring qualified experts while fostering a community of professionals ready to share their skills and knowledge.
 ---
 
 ## Objectives
