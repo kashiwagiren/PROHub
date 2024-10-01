@@ -21,6 +21,8 @@ ProHub is a web-based platform designed to connect clients with verified profess
 Professionals using ProHub undergo a credential verification process to ensure quality service. Not only can clients seek help, but professionals themselves can use the platform to find services from other skilled experts, creating a collaborative environment.
 
 This platform aims to streamline the process of hiring qualified experts while fostering a community of professionals ready to share their skills and knowledge.
+
+
 ---
 
 ## Objectives
