@@ -1,4 +1,4 @@
-# [PROHUB - PROFESSIONAL RESOURCE ORGANIZATION HUB](https://kashiwagiren.github.io/PROHub/)
+# [PROHub - Professional Resource Organization Hub](https://kashiwagiren.github.io/PROHub/)
 
 ## Quick Access Index
 - [Introduction](#introduction)
