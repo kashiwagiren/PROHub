@@ -3,39 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <style>
-        .button {
-          display: inline-block;
-          padding: 10px 20px;
-          font-size: 16px;
-          color: white;
-          background-color: #4CAF50;
-          text-decoration: none;
-          border-radius: 5px;
-          text-align: center;
-        }
-        .button:hover {
-          background-color: #45a049;
-        }
-      </style>
+    <title>Login | PROHub</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="login.php" method="POST">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required>
-    
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required>
-    
-          <button type="submit">Login</button>
-        </form>
+  <div class="login-box">
+    <div class="login-header">
+      <header>Login</header>
     </div>
-    <div>
-        <a href="index.html" class="button">Back</a>
+    <div class="input-box">
+      <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
     </div>
-
+    <div class="input-box">
+      <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+    </div>
+    <div class="forgot">
+      <section>
+        <input type="checkbox" id="check">
+        <label for="check">Remember me</label>
+      </section>
+      <section>
+        <a href="#">Forgot password</a>
+      </section>
+    </div>
+    <div class="input-submit">
+      <button class="submit-button" id="submit"></button>
+      <label for="submit">Sign In</label>
+    </div>
+    <div class="sign-up-link">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
 </body>
