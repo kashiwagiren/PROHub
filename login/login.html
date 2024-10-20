@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROHub | Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <img src="../images/logo.png" alt="logo" class="logo">
+
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 -960 960 960" width="80" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="80" viewBox="0 -960 960 960" width="80" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+
+                <a href="../index.html" class="home-link">Home</a></li>
+                <a href="../discover/discover.html">Discover</a></li>
+            </div>
+
+            <div class="account-links">
+                <a href="../register/register.html" class="prof"><button class="proff">Join as a Professional</button></a>
+            </div>
+        </nav>
+        
+    </header>
+
+    <main>
+        <div class="login-box">
+            <div class="input-box">
+              <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
+            </div>
+            <div class="input-box">
+              <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="forgot">
+              <section>
+                <input type="checkbox" id="check">
+                <label for="check">Remember me</label>
+              </section>
+              <section>
+                <a href="#">Forgot password</a>
+              </section>
+            </div>
+            <div class="input-submit">
+              <a href="../index.html">
+                <button class="submit-button" id="submit"></button>
+                <label for="submit" class="sign">Sign In</label>
+              </a>
+            </div>
+            <div class="sign-up-link">
+              <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+        </div>
+    </main>
+
+    <div id="orientation-lock">
+        <div>
+            <p>Please rotate your device to portrait mode. We do not support landscape for mobile devices.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
