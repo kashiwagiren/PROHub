@@ -43,7 +43,6 @@ searchBox.addEventListener('input', function() {
 		}
 	});
 
-	// Show or hide the no results message
 	if (hasResults) {
 		noResultsMessage.style.display = 'none';
 	} else {
