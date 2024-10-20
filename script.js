@@ -1,25 +1,47 @@
-
-
-// <<<<<<<<<<----------------- FOR THE FRONT PAGE NOT FINAL ---------------------->>>>>>>>>>>>>> //
-let lastScrollTop = 0; // Keep track of last scroll position
-const header = document.getElementById('header'); // Get the header
-
-// Show header when at the top of the page
-window.addEventListener('scroll', function() {
-    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Check if at the top of the page
-    if (currentScroll === 0) {
-        header.classList.remove('hidden'); // Show header if at the top
-    } else if (currentScroll > lastScrollTop) {
-        // Scrolling down
-        header.classList.add('hidden'); // Hide header
-    } else {
-        // Scrolling up
-        header.classList.remove('hidden'); // Show header
-    }
+function checkOrientation() {
+    const orientationLock = document.getElementById('orientation-lock');
     
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
-});
-// <<<<<<<<<<----------------- FOR THE FRONT PAGE NOT FINAL ---------------------->>>>>>>>>>>>>> //
+    if (window.innerWidth <= 1220) {
+        if (window.innerHeight < window.innerWidth) {
+            orientationLock.style.display = 'flex';
+        } else {
+            orientationLock.style.display = 'none';
+        }
+    } else {
+        if (document.body.classList.contains('mobile-view')) {
+            if (window.innerHeight < window.innerWidth) {
+                orientationLock.style.display = 'flex';
+            } else {
+                orientationLock.style.display = 'none';
+            }
+        } else {
+            orientationLock.style.display = 'none';
+        }
+    }
+}
 
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('DOMContentLoaded', checkOrientation);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const footer = document.getElementById('footer');
+    const sectionThree = document.querySelector('.three');
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    footer.style.display = 'flex';
+                } else {
+                    footer.style.display = 'none';
+                }
+            });
+        },
+        {
+            root: null,
+            threshold: 0.1,
+        }
+    );
+
+    observer.observe(sectionThree);
+});
