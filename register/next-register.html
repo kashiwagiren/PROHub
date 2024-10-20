@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROHub | Join</title>
+    <link rel="stylesheet" href="next-register.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <img src="../images/logo.png" alt="logo" class="logo">
+
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+
+                <a href="../index.html" class="home-link">Home</a></li>
+            </div>
+        </nav>
+        
+    </header>
+
+    <div class="container">
+        <div class="title-header">Join as a Professional</div>
+        <form action="document.html">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Additional Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Username</label>
+                            <input type="text" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter your username" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Alternate Email</label>
+                            <input type="text" placeholder="Enter your email"required>
+                        </div>
+                        <div class="input-field">
+                            <label>Alternate Number</label>
+                            <input type="text" placeholder="Enter your number"required>
+                        </div>
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter your nationality" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" placeholder="Enter your address" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text" placeholder="Enter ID type" required>
+                        </div>
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="text" placeholder="Enter ID number" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input type="text" placeholder="Enter issued authority"required>
+                        </div>
+                        <div class="input-field">
+                            <label>Issued State</label>
+                            <input type="text" placeholder="Enter issued state"required>
+                        </div>
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" placeholder="Enter issued date" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" onclick="preventValidation(event)">
+                            <span class="buttonText">Back</span>
+                        </button>
+                        <button class="nextButton">
+                            <span class="buttonText">Next</span>
+                        </button>
+                    </div>
+                    
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="orientation-lock">
+        <div>
+            <p>Please rotate your device to portrait mode. We do not support landscape for mobile devices.</p>
+        </div>
+    </div>
+
+    <script src="next-register.js"></script>
+</body>
+</html>

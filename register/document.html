@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROHub | Join</title>
+  <link rel="stylesheet" href="document.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+            <img src="../images/logo.png" alt="logo" class="logo">
+
+            <label id="overlay" for="sidebar-active"></label>
+            <div class="links-container">
+
+                <a href="../index.html" class="home-link">Home</a></li>
+            </div>
+        </nav>
+        
+    </header>
+
+  <div class="wrapper">
+    <header>Upload Documents for Verification</header>
+    <form action="../index.html">
+      <input class="file-input" type="file" name="file" hidden multiple>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Browse File to Upload</p>
+      <button type="submit" class="submit-button" style="display: none;">Submit</button>
+    </form>    
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  </div>
+
+  <div id="loading-overlay" class="overlay" style="display: none;">
+    <div class="loading-animation">
+        <p>Loading...</p>
+        <div class="spinner"></div>
+    </div>
+</div>
+
+<div id="success-overlay" class="overlay" style="display: none;">
+    <div class="success-message">
+        <h2>Thank you!</h2>
+        <p>Your details have been successfully submitted!</p>
+        <button id="ok-button">OK</button>
+    </div>
+</div>
+
+
+  <div id="orientation-lock">
+      <div>
+          <p>Please rotate your device to portrait mode. We do not support landscape for mobile devices.</p>
+      </div>
+  </div>
+
+  <script src="document.js"></script>
+
+</body>
+</html>
