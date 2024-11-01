@@ -612,3 +612,33 @@ section{
     width: 100%;
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+@media (width: 1220px) {
+  .two {
+    padding: 40px 10px;
+  }
+
+  .discover-grid {
+    gap: 20px;
+  }
+
+  .card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .three h1 {
+    font-size: 28px;
+  }
+
+  .content-three {
+    padding: 100px 150px;
+    border-right-width: 80px;
+    border-left-width: 80px;
+  }
+
+  .pe {
+    width: calc(100% / 3 - 15px);
+    padding: 40px 5px;
+  }
+}
