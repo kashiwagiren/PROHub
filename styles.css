@@ -253,16 +253,21 @@ section{
 }
 
 .two{
-  background: whitesmoke;
+  background: #1e1e1e;
   text-align: center;
   padding: 60px 20px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .row{
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .col{
@@ -297,7 +302,7 @@ section{
 .card p {
   font-size: 1rem;
   font-weight: bold;
-  color: #1A1A1A;
+  color: #fff;
 }
 
 .card a{
@@ -372,7 +377,7 @@ section{
 }
 
 .three {
-  background: ghostwhite;
+  background: #1e1e1e;
   text-align: center;
   padding: 60px 20px;
 }
@@ -383,7 +388,7 @@ section{
   padding-top: 200px;
   padding-right: 300px;
   padding-bottom: 200px;
-  color: #333;
+  color: #fff;
   overflow: hidden;
   border-right-width: 160px;
   border-left-width: 160px;
