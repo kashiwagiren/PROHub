@@ -8,23 +8,9 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
-    <header>
-
-        <nav>
-            <img src="../images/logo.png" alt="logo" class="logo">
-
-            <label id="overlay" for="sidebar-active"></label>
-            <div class="links-container">
-
-                <a href="../" class="home-link">Home</a></li>
-            </div>
-        </nav>
-        
-    </header>
-
     <div class="container">
         <div class="title-header">Join as a Professional</div>
-        <form action="document.html">
+        <form id="registration-form" action="document">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Additional Details</span>
@@ -36,15 +22,15 @@
                         </div>
                         <div class="input-field">
                             <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter your username" required>
+                            <input type="date" placeholder="Enter date of birth" required>
                         </div>
                         <div class="input-field">
                             <label>Alternate Email</label>
-                            <input type="text" placeholder="Enter your email"required>
+                            <input type="text" placeholder="Enter your email" required>
                         </div>
                         <div class="input-field">
                             <label>Alternate Number</label>
-                            <input type="text" placeholder="Enter your number"required>
+                            <input type="text" placeholder="Enter your number" required>
                         </div>
                         <div class="input-field">
                             <label>Nationality</label>
@@ -71,11 +57,11 @@
                         </div>
                         <div class="input-field">
                             <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority"required>
+                            <input type="text" placeholder="Enter issued authority" required>
                         </div>
                         <div class="input-field">
                             <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state"required>
+                            <input type="text" placeholder="Enter issued state" required>
                         </div>
                         <div class="input-field">
                             <label>Issued Date</label>
@@ -87,12 +73,12 @@
                         </div>
                     </div>
                     <div class="button-container">
-                        <button type="submit" onclick="preventValidation(event)">
-                            <span class="buttonText">Back</span>
-                        </button>
-                        <button class="nextButton">
-                            <span class="buttonText">Next</span>
-                        </button>
+                        <div class="button">
+                            <input type="button" value="Back" onclick="window.location.href='../register/register.html';">
+                        </div>
+                        <div class="button">
+                            <input type="submit" id="submit-button" value="Next" disabled>
+                        </div>
                     </div>
                     
                 </div>

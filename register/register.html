@@ -7,23 +7,9 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <header>
-
-        <nav>
-            <img src="../images/logo.png" alt="logo" class="logo">
-
-            <label id="overlay" for="sidebar-active"></label>
-            <div class="links-container">
-
-                <a href="../" class="home-link">Home</a></li>
-            </div>
-        </nav>
-        
-    </header>
-
     <div class="container">
         <div class="title">Join as a Professional</div>
-        <form action="next-register.html">
+        <form id="registration-form" action="next-register">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Full name</span>
@@ -43,27 +29,28 @@
                 </div>
                 <div class="input-box">
                     <span class="details">Password</span>
-                    <input type="password" placeholder="Enter your password" required>
+                    <input type="password" id="password" placeholder="Enter your password" required>
                 </div>
                 <div class="input-box">
                     <span class="details">Confirm Password</span>
-                    <input type="password" placeholder="Confirm your password"required>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    <div id="password-feedback" class="feedback"></div>
                 </div>
             </div>
             <div class="gender-details">
-                <input type="radio" name="gender" id="dot-1">
-                <input type="radio" name="gender" id="dot-2">
-                <input type="radio" name="gender" id="dot-3">
                 <span class="gender-title">Gender</span>
                 <div class="category">
+                    <input type="radio" name="gender" id="dot-1" value="Male" required>
                     <label for="dot-1">
                         <span class="dot one"></span>
                         <span class="gender">Male</span>
                     </label>
+                    <input type="radio" name="gender" id="dot-2" value="Female" required>
                     <label for="dot-2">
                         <span class="dot two"></span>
                         <span class="gender">Female</span>
                     </label>
+                    <input type="radio" name="gender" id="dot-3" value="Prefer not to say" required>
                     <label for="dot-3">
                         <span class="dot three"></span>
                         <span class="gender">Prefer not to say</span>
@@ -75,7 +62,7 @@
                     <input type="button" value="Cancel" onclick="window.location.href='../';">
                 </div>
                 <div class="button">
-                    <input type="submit" value="Next">
+                    <input type="submit" id="submit-button" value="Next" disabled>
                 </div>
             </div>
         </form>
