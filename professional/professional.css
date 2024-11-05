@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  background-color:#1e1e1e;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -47,3 +58,262 @@ nav {
   nav svg {
     fill: white;
   }
+
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .home,
+    .login,
+    .account-links {
+      width: 100%;
+      justify-content: center; /* Center align for smaller screens */
+    }
+  }
+
+  .home{
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .login{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+  }
+  
+  .home a,
+  .login a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .home a:hover,
+.login a:hover {
+  color: royalblue;
+
+}
+
+.profile-section {
+  display: flex;                  /* Use flexbox for layout */
+  align-items: center;           /* Center items vertically */
+  margin-top: 200px;
+  margin-left: 200px;
+}
+
+.profile-section img {
+  width: 200px;                   /* Set the image width */
+  height: auto;                  /* Maintain aspect ratio */
+  margin-right: 15px;            /* Space between image and text */
+  border-radius: 50%;
+}
+
+.profile-section h2 {
+  margin-top: 0px;                    /* Remove default margin */
+  font-size: 2.5em;              /* Adjust font size */
+  color: white;
+}
+
+.custom-divider1 {
+  height: .1px;
+  background-color: rgb(126, 122, 122);       /* Line color */
+  margin: 10px 0;                /* Space above and below the line */
+}
+
+.star-rating {
+  display: flex;                 /* Use flexbox for star layout */
+  margin-top: 15px;              /* Space between the name and stars */
+}
+
+.star-rating i {
+  color: gold;                   /* Star color */
+  margin-right: 5px;            /* Space between stars */
+}
+
+.Services-content {
+  display: flex;
+  flex-direction: column;       /* Stack items vertically */
+  align-items: center;
+  margin: 100px auto 0;         /* Center horizontally with top margin */
+  padding: 0 10px;
+  max-width: 80%;
+  width: 100%;
+}
+
+.services-header {
+  display: flex;
+  align-items: center;       /* Center items vertically */
+  justify-content: space-between; /* Space out items */
+  width: 100%;              /* Ensure it spans the full width */
+  padding: 10px 20px;       /* Add some padding around the header */
+}
+
+.offered, .rating {
+  margin: 0;                /* Remove default margin */
+  font-size: 1.5rem;        /* Adjust font size */
+  color: white;
+}
+
+.add-file {
+  background-color: #007bff; /* Button color */
+  color: white;               /* Text color */
+  border: none;               /* Remove default border */
+  padding: 10px 15px;         /* Button padding */
+  font-size: 1rem;            /* Font size */
+  cursor: pointer;            /* Pointer cursor on hover */
+  border-radius: 5px;        /* Rounded corners */
+}
+
+.add-file:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.custom-divider2 {
+  width: 100%;                  /* Stretch divider to full width */
+  height: .1px;
+  background-color: rgb(126, 122, 122);
+  margin: 10px 0;               /* Space above and below the line */
+}
+
+.services {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space out items */
+  gap: 15px;
+  width: 100%; /* Ensure full width so items can spread out */
+}
+
+.services h2 {
+  margin-left: 20px;
+  font-size: 1.5rem;
+  color:white;
+}
+
+.star-rating2 {
+  margin-left: 780px;
+  position: fixed;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.star-rating2 i {
+  color: gold;
+  font-size: 1.2rem;
+  transition: transform 0.2s; /* Smooth transition for scaling */
+}
+.star-rating i:hover,
+.star-rating2 i:hover {
+  transform: scale(1.2); /* Scale the icon to 130% on hover */
+}
+
+.edit-delete {
+  margin-right: 30px;
+  display: flex;
+  gap: 50px; /* Space between edit and delete icons */
+}
+
+.edit-delete i {
+  color: #007bff; /* Color for icons */
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.edit-delete i:hover{
+  transform: scale(1.2);
+}
+
+.add-service-section {
+  margin-left: 195px;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding inside the form */
+  max-width: 1658.5px; /* Maximum width of the form */
+  background-color: transparent;
+}
+
+.add-service-header {
+  display: flex;
+  justify-content: space-between; /* Space out header elements */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space below header */
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 1.8rem; /* Header font size */
+  color: white;
+}
+
+.form-row {
+  display: flex; /* Enable flexbox for the row */
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Space between elements */
+  margin-bottom: 20px; /* Space below the row */
+}
+
+.service-input, .verification-section, .upload-section {
+  display: flex; /* Enable flexbox for these sections */
+  flex-direction: column; /* Stack label and input/select vertically */
+  align-items: flex-start; /* Align items to the start */
+  width: 100%; /* Full width of parent */
+}
+
+label {
+  margin-top: 20px;
+  font-size: 1rem; /* Label font size */
+  margin-bottom: 5px; /* Space below label */
+  color: white;
+}
+
+input[type="text"], select, input[type="file"] {
+  width: 100%;           /* Full width within its container */
+  max-width: 600px;     /* Maximum width of the input/select */
+  padding: 10px;        /* Padding inside the input/select */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px;   /* Rounded corners */
+  font-size: 1rem;      /* Font size for input/select */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="file"] {
+  background-color: #f8f9fa; /* Light background for file input */
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none; /* Remove outline */
+}
+
+button#save-changes-button {
+  margin-right: 10px;
+  background-color: #007bff; /* Button color */
+  color: white;               /* Text color */
+  border: none;               /* Remove default border */
+  padding: 10px 15px;         /* Button padding */
+  font-size: 1rem;            /* Font size */
+  cursor: pointer;            /* Pointer cursor on hover */
+  border-radius: 5px;        /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button#save-changes-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.verification-note {
+  font-size: 0.9rem; /* Slightly smaller font size */
+  color: white;
+  margin-top: 20px; /* Space above the note */
+  padding: 10px; /* Padding around the note */
+  border-radius: 5px; /* Rounded corners */
+}
