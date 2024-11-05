@@ -561,12 +561,13 @@ section{
 
 .contact-us h1 {
   font-size: 24px;
-
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .contact-us p {
   margin: 5px 0;
+  color: #fff;
 }
 
 .contact-us form {
