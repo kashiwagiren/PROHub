@@ -17,7 +17,7 @@ nav {
   height: 80px;
   background: #1e1e1e;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   user-select: none;
 }
@@ -186,14 +186,21 @@ nav .home-link {
 }
 
 .add-service-section {
-  margin-left: 195px;
-  margin-top: 90px;
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px; /* Rounded corners */
   padding: 20px; /* Padding inside the form */
   max-width: 1658.5px; /* Maximum width of the form */
-  background-color: transparent;
+  background-color: #2e2e2e;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
 }
 
 .add-service-header {
