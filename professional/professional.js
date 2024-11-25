@@ -1,15 +1,29 @@
-document.getElementById('add-service-button').addEventListener('click', function() {
-    // Hide the entire Services-content
-    document.getElementById('services-content').style.display = 'none';
-    
-    // Show the add service section
-    document.getElementById('add-service-section').style.display = 'block';
+// Add service button event listener
+document.getElementById('add-service-button').addEventListener('click', function () {
+    // Get the elements
+    const servicesContent = document.getElementById('services-content');
+    const addServiceSection = document.getElementById('add-service-section');
+
+    // Hide the Services-content and show the Add Service section
+    if (servicesContent && addServiceSection) {
+        servicesContent.style.display = 'none';
+        addServiceSection.style.display = 'block';
+    } else {
+        console.error('Services-content or Add-service-section element not found.');
+    }
 });
 
-document.getElementById('save-changes-button').addEventListener('click', function() {
-    // Hide the add service section
-    document.getElementById('add-service-section').style.display = 'none';
-    
-    // Show the entire Services-content again
-    document.getElementById('services-content').style.display = 'block';
+// Save changes button event listener
+document.getElementById('save-changes-button').addEventListener('click', function () {
+    // Get the elements
+    const servicesContent = document.getElementById('services-content');
+    const addServiceSection = document.getElementById('add-service-section');
+
+    // Hide the Add Service section and show the Services-content
+    if (servicesContent && addServiceSection) {
+        addServiceSection.style.display = 'none';
+        servicesContent.style.display = 'block';
+    } else {
+        console.error('Services-content or Add-service-section element not found.');
+    }
 });
