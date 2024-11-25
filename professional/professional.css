@@ -272,3 +272,98 @@ button#save-changes-button:hover {
   padding: 10px; /* Padding around the note */
   border-radius: 5px; /* Rounded corners */
 }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#other-reason {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  resize: none;
+}
+
+#confirmation-modal .modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Same styles for modals */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-buttons button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px;
+  resize: none;
+}
+
+input[type="text"], select, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#validation-modal .modal-content {
+  background: #f8d7da;
+  color: #721c24;
+}
