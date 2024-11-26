@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
   </head>
-  <body>
+  <body> 
     <header>
       <nav>
         <img src="images/logo.png" alt="logo" class="logo">
@@ -26,7 +26,7 @@
           </label>
           <a href="./" class="home-link">Home</a>
           </li>
-          <a href="./discover/discover.html">Discover</a>
+          <a href="./discover/discover.html?postcode=6000">Discover</a>
           </li>
           <a href="./login/login.html" class="login">Login</a>
         </div>
@@ -41,17 +41,18 @@
       <div class="container">
         <section class="one">
           <div class="content">
-            <h1 class="one-text">Find the perfect <br>professional for you </h1>
-            <p class="one-sub">Get free quotes within minutes</p>
-            <div class="search">
-              <input type="text" class="service-input" placeholder="What service are you looking for?">
-              <input type="text" class="postcode-input" placeholder="Postcode">
-              <button type="submit" class="search-button">Search</button>
-            </div>
-            <p class="popular-services">Popular: House Cleaning, Web Design, Personal Trainers</p>
+              <h1 class="one-text">Find the perfect <br>professional for you</h1>
+              <p class="one-sub">Get free quotes within minutes</p>
+              <form action="discover/discover.html" method="get" class="search">
+                  <input type="text" name="search" class="service-input" placeholder="What service are you looking for?" required>
+                  <input type="text" name="postcode" class="postcode-input" placeholder="Postcode" required>
+                  <input type="hidden" name="origin" value="section-one">
+                  <button type="submit" class="search-button">Search</button>
+              </form>
+              <p class="popular-services">Popular Services in your Area: Automotive Services, House Services, Electronics</p>
           </div>
-        </section>
-        <section class="two">
+      </section>
+        <section class="two" id="section-two">
             <div class="row">
               <div class="col">
                 <h2 class="text-center">
@@ -61,37 +62,31 @@
             </div>
             <div class="discover-grid">
               <div class="card">
-                <a href="#">
-                  <img src="./images/services-homegarden.png" alt="Home & Garden">
-                  <p>Home & Garden</p>
+                <a href="../PROHub/discover/discover.html?search=Automotive%20Services&postcode=6000&origin=section-two">
+                  <img src="./images/services-car.png" alt="Automotive Services">
+                  <p>Automotive Services</p>
                 </a>
               </div>
               <div class="card">
-                <a href="#">
-                  <img src="./images/services-healthwellbeing.png" alt="Health & Wellbeing">
-                  <p>Health & Wellbeing</p>
+                <a href="discover/discover.html?search=House%20Services&postcode=6000&origin=section-two">
+                  <img src="./images/services-house.png" alt="House Services">
+                  <p>House Services</p>
                 </a>
               </div>
               <div class="card">
-                <a href="#">
-                  <img src="./images/services-weddingsevents.png" alt="Weddings & Events">
-                  <p>Weddings & Events</p>
+                <a href="discover/discover.html?search=Electronics%20Services&postcode=6000&origin=section-two">
+                  <img src="./images/services-laptop.png" alt="Electronics Services">
+                  <p>Electronics Services</p>
                 </a>
               </div>
               <div class="card">
-                <a href="#">
-                  <img src="./images/services-businessservices.png" alt="Business Services">
-                  <p>Business Services</p>
+                <a href="discover/discover.html?search=Pet%20Services&postcode=6000&origin=section-two">
+                  <img src="./images/services-pet.png" alt="Pet Services">
+                  <p>Pet Services</p>
                 </a>
               </div>
               <div class="card">
-                <a href="#">
-                  <img src="./images/services-lessonstraining.png" alt="Lessons & Training">
-                  <p>Lessons & Training</p>
-                </a>
-              </div>
-              <div class="card">
-                <a href="discover/discover.html">
+                <a href="discover/discover.html?postcode=6000&origin=section-two">
                   <img src="./images/services-otherservices.png" alt="Other services">
                   <p>Other services</p>
                 </a>
@@ -158,11 +153,18 @@
                   </a>
                 </div>
               </div>
+              <div class="text" style="font-size: 20px;">
+                Did you like it? Click this 
+                <a href="https://github.com/kashiwagiren/PROHub">
+                    <i class="fab fa-github" style="font-size: 25px;"></i>
+                </a> 
+                and leave a star on it.
+              </div>
             </div>
           </div>
           <div class="contact-us">
             <h1>Contact Us</h1>
-            <p>Address: 123 UC Main, Sanciangko, Cebu</p>
+            <p>Address: Sanciangko St, Cebu City, 6000 Cebu</p>
             <p>Email: contact@prohub.com</p>
             <p>Phone: (123) 456-7890</p>
             <p>Mobile: (098) 765-4321</p>
@@ -173,12 +175,6 @@
               <input type="email" name="email" placeholder="Email" required>
               <textarea name="help" placeholder="What can we help you with?" required></textarea>
               <button type="submit">Submit</button>
-              <!--
-              <a href="/services/cars/wheel/wheel.html">Wheel</a>
-              <a href="/services/cars/paint/paint.html">Paint</a>
-              <a href="/services/cars/maintenance/maintenance.html">Maintenance</a>
-              -->
-              
             </form>
           </div>
           <div class="footer" id="footer" style="display: none;"> &copy; 2024 PROHub. All rights reserved. </div>

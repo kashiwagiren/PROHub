@@ -34,6 +34,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  text-decoration: none;
 }
 
 .service-item {
@@ -43,6 +44,7 @@ h2 {
   color: #f5f5f5;
   font-size: 14px;
   text-align: center;
+  text-decoration: none;
   display: inline-block;
   box-sizing: border-box;
   flex-basis: calc(9.5% - 8px);
