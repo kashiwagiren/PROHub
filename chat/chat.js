@@ -3,6 +3,12 @@ const contacts = [
     { id: 2, name: "Client 2" },
     { id: 3, name: "Client 3" },
   ];
+
+  const backButton = document.getElementById("backButton");
+
+  backButton.addEventListener("click", () => {
+    window.location.href = "../professional/professional.html"; // Replace "index.html" with the target HTML file.
+  });
   
   const messages = {
     1: [{ text: "Boss, mo offer mo roadside assistance?", type: "received" }, { text: "oo boss", type: "sent" }, { image: "../images/dev1.jpg", type: "sent" }, { text: "nice ka boss", type: "received" }],

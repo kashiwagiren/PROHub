@@ -14,6 +14,19 @@
     min-height: 100vh;
     background-color: #000;
   }
+
+  #backButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  #backButton:hover {
+    text-decoration: underline;
+  }  
   
   .chat-app {
     display: flex;
@@ -63,10 +76,14 @@
   }
   
   .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px;
     background-color: #1e1e1e;
     color: white;
     font-size: 1.2rem;
+    flex-direction: row-reverse;
   }
   
   .messages {
