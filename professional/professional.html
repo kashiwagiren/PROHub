@@ -1,265 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROHub | Professional</title>
-    <link rel="stylesheet" href="professional.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="professional.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <img src="../images/logo.png" alt="logo" class="logo">
+      <nav>
+        <img src="../images/logo.png" alt="logo" class="logo" />
 
-            <div class="links-container">
-                <a href="../index.html" class="home-link">Home</a>
-                <a href="../chat/chat.html">Chats</a>
-                <a href="../index.html">Log out</a>
-            </div>
-
-        </nav>
+        <div class="links-container">
+          <a href="../index.html" class="home-link">Home</a>
+          <a href="../chat/chat.html">Chats</a>
+          <a href="../index.html">Log out</a>
+        </div>
+      </nav>
     </header>
 
     <main class="main-content">
-        <div class="profile-section">
-           <img src="../images/profile.png" alt="img">
-           <div>
-               <h2>Digital Spectrum Services</h2>
-               <div class="custom-divider1"></div>
-               <div class="star-rating">
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-               </div>
-           </div>
-       </div>
+      <div class="profile-section">
+        <img src="../images/profile.png" alt="img" />
+        <div>
+          <h2>Digital Spectrum Services</h2>
+          <div class="custom-divider1"></div>
+          <div class="star-rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
 
-       <div class="Services-content" id="services-content">
-           <div class="services-header">
-               <h2 class="offered">Offered Services</h2>
-               <h2 class="rating">Rating</h2>
-               <button class="add-file" id="add-service-button">Add Service</button>
-           </div>
-       
-           <div class="custom-divider2"></div>
-       
-           <div class="services" id="services-list">
-               <h2>Computer Repair Service</h2>
-               <div class="star-rating2">
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-               </div>
-               <div class="edit-delete">
-                   <i class="fas fa-edit"></i>
-                   <i class="fas fa-trash"></i>
-               </div>
-           </div>
-       
-           <div class="services">
-               <h2>Web Development</h2>
-               <div class="star-rating2">
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-               </div>
-               <div class="edit-delete">
-                   <i class="fas fa-edit"></i>
-                   <i class="fas fa-trash"></i>
-               </div>
-           </div>
-       
-           <div class="services">
-               <h2>Graphic Design</h2>
-               <div class="star-rating2">
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-               </div>
-               <div class="edit-delete">
-                   <i class="fas fa-edit"></i>
-                   <i class="fas fa-trash"></i>
-               </div>
-           </div>
-       
-           <div class="services">
-               <h2>Cybersecurity Services</h2>
-               <div class="star-rating2">
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-                   <i class="fas fa-star"></i>
-               </div>
-               <div class="edit-delete">
-                   <i class="fas fa-edit"></i>
-                   <i class="fas fa-trash"></i>
-               </div>
-           </div>
-    
-       </div>
-        
-        <div id="delete-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Delete Service</h3>
-                <p>Please specify the reason for deleting this service:</p>
-                <select id="delete-reason">
-                    <option value="" disabled selected>Select a reason</option>
-                    <option value="No longer needed">No longer needed</option>
-                    <option value="Incorrect service">Incorrect service</option>
-                    <option value="Other">Other</option>
-                </select>
-                <textarea id="other-reason" placeholder="If 'Other', please specify..." style="display: none;"></textarea>
-                <div class="modal-buttons">
-                    <button id="continue-delete">Continue</button>
-                    <button id="cancel-delete">Cancel</button>
-                </div>
-            </div>
+      <div class="Services-content" id="services-content">
+        <div class="services-header">
+          <h2 class="offered">Offered Services</h2>
+          <h2 class="rating">Rating</h2>
+          <button class="add-file" id="add-service-button">Add Service</button>
         </div>
 
-        <div id="confirmation-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Are you sure you want to delete this service?</h3>
-                <div class="modal-buttons">
-                    <button id="confirm-delete">Yes</button>
-                    <button id="cancel-confirmation">No</button>
-                </div>
-            </div>
+        <div class="custom-divider2"></div>
+
+        <div class="services" id="services-list">
+          <h2>Computer Repair Service</h2>
+          <div class="star-rating2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="edit-delete">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash"></i>
+          </div>
         </div>
 
-        <div id="reason-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Please Provide a Reason</h3>
-                <p>You must specify a reason for deleting this service before continuing.</p>
-                <div class="modal-buttons">
-                    <button id="close-reason-modal">Close</button>
-                </div>
-            </div>
+        <div class="services">
+          <h2>Web Development</h2>
+          <div class="star-rating2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="edit-delete">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash"></i>
+          </div>
         </div>
 
-        <div id="service-deleted-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Service Deleted</h3>
-                <p>Your service has been successfully deleted.</p>
-                <div class="modal-buttons">
-                    <button id="close-deleted-modal">Close</button>
-                </div>
-            </div>
+        <div class="services">
+          <h2>Graphic Design</h2>
+          <div class="star-rating2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="edit-delete">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash"></i>
+          </div>
         </div>
 
-        <div id="edit-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Edit Service</h3>
-                <label for="edit-service-name">Service Name</label>
-                <input type="text" id="edit-service-name" placeholder="Enter Service Name">
-
-                <label for="edit-expertise-level">Years of Experience</label>
-                <select id="edit-expertise-level">
-                    <option value="0-1">0-1 Year</option>
-                    <option value="1-2">1-2 Years</option>
-                    <option value="2-3">2-3 Years</option>
-                    <option value="3-5">3-5 Years</option>
-                    <option value="5-10">5-10 Years</option>
-                    <option value="10+">10+ Years</option>
-                </select>
-
-                <label for="edit-upload-credentials">Upload Credentials</label>
-                <input type="file" id="edit-upload-credentials" accept="image/*">
-
-                <div class="modal-buttons">
-                    <button id="save-edits">Save Changes</button>
-                    <button id="cancel-edit">Cancel</button>
-                </div>
-            </div>
+        <div class="services">
+          <h2>Cybersecurity Services</h2>
+          <div class="star-rating2">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="edit-delete">
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash"></i>
+          </div>
         </div>
+      </div>
 
-        <div id="validation-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Error</h3>
-                <p>Please fill in all fields.</p>
-                <div class="modal-buttons">
-                    <button id="close-validation">Close</button>
-                </div>
-            </div>
+      <div id="delete-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Delete Service</h3>
+          <p>Please specify the reason for deleting this service:</p>
+          <select id="delete-reason">
+            <option value="" disabled selected>Select a reason</option>
+            <option value="No longer needed">No longer needed</option>
+            <option value="Incorrect service">Incorrect service</option>
+            <option value="Other">Other</option>
+          </select>
+          <textarea
+            id="other-reason"
+            placeholder="If 'Other', please specify..."
+            style="display: none"
+          ></textarea>
+          <div class="modal-buttons">
+            <button id="continue-delete">Continue</button>
+            <button id="cancel-delete">Cancel</button>
+          </div>
         </div>
+      </div>
 
-        <div id="verification-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <h3>Note</h3>
-                <p>After saving changes, please allow at least 1-2 weeks for verification of your service.
-                     This period is essential for us to assess your qualifications and ensure that you 
-                     have the necessary skills to provide the service.</p>
-                <div class="modal-buttons">
-                    <button id="modal-ok-button">OK</button>
-                </div>
-            </div>
+      <div id="confirmation-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Are you sure you want to delete this service?</h3>
+          <div class="modal-buttons">
+            <button id="confirm-delete">Yes</button>
+            <button id="cancel-confirmation">No</button>
+          </div>
         </div>
-        
-        <div id="verification-modal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <p>
-                    After saving changes, please allow at least 1-2 weeks for verification of your service. This period is
-                    essential for us to assess your qualifications and ensure that you have the necessary skills to
-                    provide the service.
-                </p>
-                <button id="modal-ok-button">OK</button>
-            </div>
+      </div>
+
+      <div id="reason-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Please Provide a Reason</h3>
+          <p>
+            You must specify a reason for deleting this service before
+            continuing.
+          </p>
+          <div class="modal-buttons">
+            <button id="close-reason-modal">Close</button>
+          </div>
         </div>
+      </div>
 
+      <div id="service-deleted-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Service Deleted</h3>
+          <p>Your service has been successfully deleted.</p>
+          <div class="modal-buttons">
+            <button id="close-deleted-modal">Close</button>
+          </div>
+        </div>
+      </div>
 
-       <div class="add-service-section" id="add-service-section" style="display: none;">
-           <div class="add-service-header">
-               <h2>Add New Service</h2>
-               <button id="save-changes-button">Cancel</button>
-           </div>
-           <div class="custom-divider2"></div>
-       
-           <div class="form-row">
-               <div class="service-input">
-                   <label for="service-name">Service Name</label>
-                   <input type="text" id="service-name" placeholder="Enter Service Name">
-               </div>
-       
-               <div class="verification-section">
-                   <label for="expertise-level">Years of experience</label>
-                   <select id="expertise-level">
-                       <option value="0-1">0-1 Year</option>
-                       <option value="1-2">1-2 Years</option>
-                       <option value="2-3">2-3 Years</option>
-                       <option value="3-5">3-5 Years</option>
-                       <option value="5-10">5-10 Years</option>
-                       <option value="10+">10+ Years</option>
-                   </select>
-               </div>
-       
-               <div class="upload-section">
-                   <label for="upload-credentials">Upload Credentials</label>
-                   <input type="file" id="upload-credentials" accept="image/*">
-               </div>
+      <div id="edit-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Edit Service</h3>
+          <label for="edit-service-name">Service Name</label>
+          <input
+            type="text"
+            id="edit-service-name"
+            placeholder="Enter Service Name"
+          />
 
-           </div>
-           <p class="verification-note">
-               Note: After saving changes, please allow at least 1-2 weeks for verification of your service. This period is essential for us to assess your qualifications 
-               and ensure that you have the necessary skills to provide the service. Our verification process includes a careful review of your submitted credentials 
-               and previous experience. We appreciate your patience as we uphold the highest standards for our service providers. Please keep an eye on your email for 
-               any inquiries or additional questions we may have during this process.
-           </p>
-       </div>
+          <label for="edit-expertise-level">Years of Experience</label>
+          <select id="edit-expertise-level">
+            <option value="0-1">0-1 Year</option>
+            <option value="1-2">1-2 Years</option>
+            <option value="2-3">2-3 Years</option>
+            <option value="3-5">3-5 Years</option>
+            <option value="5-10">5-10 Years</option>
+            <option value="10+">10+ Years</option>
+          </select>
 
-       
-       
+          <label for="edit-upload-credentials">Upload Credentials</label>
+          <input type="file" id="edit-upload-credentials" accept="image/*" />
 
-     </main>
-     <script src="professional.js"></script>
-</body>
+          <div class="modal-buttons">
+            <button id="save-edits">Save Changes</button>
+            <button id="cancel-edit">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="validation-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Error</h3>
+          <p>Please fill in all fields.</p>
+          <div class="modal-buttons">
+            <button id="close-validation">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="verification-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <h3>Note</h3>
+          <p>
+            After saving changes, please allow at least 1-2 weeks for
+            verification of your service. This period is essential for us to
+            assess your qualifications and ensure that you have the necessary
+            skills to provide the service.
+          </p>
+          <div class="modal-buttons">
+            <button id="modal-ok-button">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="verification-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <p>
+            After saving changes, please allow at least 1-2 weeks for
+            verification of your service. This period is essential for us to
+            assess your qualifications and ensure that you have the necessary
+            skills to provide the service.
+          </p>
+          <button id="modal-ok-button">OK</button>
+        </div>
+      </div>
+
+      <div
+        class="add-service-section"
+        id="add-service-section"
+        style="display: none"
+      >
+        <div class="add-service-header">
+          <h2>Add New Service</h2>
+          <button id="save-changes-button">Cancel</button>
+        </div>
+        <div class="custom-divider2"></div>
+
+        <div class="form-row">
+          <div class="service-input">
+            <label for="service-name">Service Name</label>
+            <input
+              type="text"
+              id="service-name"
+              placeholder="Enter Service Name"
+            />
+          </div>
+
+          <div class="verification-section">
+            <label for="expertise-level">Years of experience</label>
+            <select id="expertise-level">
+              <option value="0-1">0-1 Year</option>
+              <option value="1-2">1-2 Years</option>
+              <option value="2-3">2-3 Years</option>
+              <option value="3-5">3-5 Years</option>
+              <option value="5-10">5-10 Years</option>
+              <option value="10+">10+ Years</option>
+            </select>
+          </div>
+
+          <div class="upload-section">
+            <label for="upload-credentials">Upload Credentials</label>
+            <input type="file" id="upload-credentials" accept="image/*" />
+          </div>
+        </div>
+        <p class="verification-note">
+          Note: After saving changes, please allow at least 1-2 weeks for
+          verification of your service. This period is essential for us to
+          assess your qualifications and ensure that you have the necessary
+          skills to provide the service. Our verification process includes a
+          careful review of your submitted credentials and previous experience.
+          We appreciate your patience as we uphold the highest standards for our
+          service providers. Please keep an eye on your email for any inquiries
+          or additional questions we may have during this process.
+        </p>
+      </div>
+    </main>
+    <script src="professional.js"></script>
+  </body>
 </html>

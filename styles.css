@@ -235,12 +235,12 @@ nav svg {
   -webkit-overflow-scrolling: touch;
 }
 
-.container::-webkit-scrollbar{
+.container::-webkit-scrollbar {
   width: 0;
   background: transparent;
 }
 
-section{
+section {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -248,11 +248,11 @@ section{
   scroll-snap-align: start;
 }
 
-.one{
+.one {
   background: #1e1e1e;
 }
 
-.two{
+.two {
   background: #1e1e1e;
   text-align: center;
   padding: 60px 20px;
@@ -263,19 +263,19 @@ section{
   gap: 4px;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
 
-.col{
+.col {
   font-size: 2.75em;
   margin-bottom: 42px;
 }
 
-.discover-grid{
+.discover-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -283,13 +283,13 @@ section{
   gap: 35px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.card:hover{
+.card:hover {
   cursor: pointer;
 }
 
@@ -305,74 +305,73 @@ section{
   color: #fff;
 }
 
-.card a{
+.card a {
   text-decoration: none;
 }
 
-.card p:hover{
+.card p:hover {
   text-decoration: underline;
 }
 
-.slider{
+.slider {
   width: 100%;
   margin-top: 80px;
   height: var(--height);
   overflow: hidden;
-  mask-image: linear-gradient(
-      to right,
-      transparent,
-      #000 10% 90%,
-      transparent
-  );
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
 
-.slider .list{
+.slider .list {
   display: flex;
   width: 100%;
   min-width: calc(var(--width) * var(--quantity));
   position: relative;
 }
 
-.slider .list .item{
+.slider .list .item {
   width: var(--width);
   height: var(--height);
   position: absolute;
   left: 100%;
   animation: autoRun 30s linear infinite;
   transition: filter 0.5s;
-  animation-delay: calc( (30s / var(--quantity)) * (var(--position) - 1) - 30s)!important;
+  animation-delay: calc(
+    (30s / var(--quantity)) * (var(--position) - 1) - 30s
+  ) !important;
 }
 
-.slider .list .item img{
+.slider .list .item img {
   width: 100%;
 }
 
-@keyframes autoRun{
-  from{
-      left: 100%;
-  }to{
-      left: calc(var(--width) * -1);
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
   }
 }
 
-.slider:hover .item{
-  animation-play-state: paused!important;
+.slider:hover .item {
+  animation-play-state: paused !important;
   filter: grayscale(1);
 }
 
-.slider .item:hover{
+.slider .item:hover {
   filter: grayscale(0);
   cursor: pointer;
 }
 
-.slider[reverse="true"] .item{
+.slider[reverse="true"] .item {
   animation: reversePlay 30s linear infinite;
 }
-@keyframes reversePlay{
-  from{
-      left: calc(var(--width) * -1);
-  }to{
-      left: 100%;
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
   }
 }
 
@@ -606,17 +605,17 @@ section{
 }
 
 .footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 @media (width: 1220px) {

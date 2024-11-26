@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,24 +13,24 @@ body{
   background: #1e1e1e;
 }
 
-::selection{
+::selection {
   color: #fff;
-  background: #6990F2;
+  background: #6990f2;
 }
-.wrapper{
+.wrapper {
   width: 430px;
   background: #fff;
   border-radius: 5px;
   padding: 30px;
-  box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
 }
-.wrapper header{
-  color: #6990F2;
+.wrapper header {
+  color: #6990f2;
   font-size: 27px;
   font-weight: 600;
   text-align: center;
 }
-.wrapper form{
+.wrapper form {
   height: 167px;
   display: flex;
   cursor: pointer;
@@ -39,22 +39,22 @@ body{
   justify-content: center;
   flex-direction: column;
   border-radius: 5px;
-  border: 2px dashed #6990F2;
+  border: 2px dashed #6990f2;
 }
-form :where(i, p){
-  color: #6990F2;
+form :where(i, p) {
+  color: #6990f2;
 }
-form i{
+form i {
   font-size: 50px;
 }
-form p{
+form p {
   margin-top: 15px;
   font-size: 16px;
 }
 
-section .row{
+section .row {
   margin-bottom: 10px;
-  background: #E9F0FF;
+  background: #e9f0ff;
   list-style: none;
   padding: 15px 20px;
   border-radius: 5px;
@@ -62,95 +62,95 @@ section .row{
   align-items: center;
   justify-content: space-between;
 }
-section .row i{
-  color: #6990F2;
+section .row i {
+  color: #6990f2;
   font-size: 30px;
 }
-section .details span{
+section .details span {
   font-size: 14px;
 }
-.progress-area .row .content{
+.progress-area .row .content {
   width: 100%;
   margin-left: 15px;
 }
-.progress-area .details{
+.progress-area .details {
   display: flex;
   align-items: center;
   margin-bottom: 7px;
   justify-content: space-between;
 }
-.progress-area .content .progress-bar{
+.progress-area .content .progress-bar {
   height: 6px;
   width: 100%;
   margin-bottom: 4px;
   background: #fff;
   border-radius: 30px;
 }
-.content .progress-bar .progress{
+.content .progress-bar .progress {
   height: 100%;
   width: 0%;
-  background: #6990F2;
+  background: #6990f2;
   border-radius: inherit;
 }
-.uploaded-area{
+.uploaded-area {
   max-height: 232px;
   overflow-y: scroll;
 }
-.uploaded-area.onprogress{
+.uploaded-area.onprogress {
   max-height: 150px;
 }
-.uploaded-area::-webkit-scrollbar{
+.uploaded-area::-webkit-scrollbar {
   width: 0px;
 }
-.uploaded-area .row .content{
+.uploaded-area .row .content {
   display: flex;
   align-items: center;
 }
-.uploaded-area .row .details{
+.uploaded-area .row .details {
   display: flex;
   margin-left: 15px;
   flex-direction: column;
 }
-.uploaded-area .row .details .size{
+.uploaded-area .row .details .size {
   color: #404040;
   font-size: 11px;
 }
-.uploaded-area i.fa-check{
+.uploaded-area i.fa-check {
   font-size: 16px;
 }
 
 #orientation-lock {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 2em;
-    text-align: center;
-    z-index: 1000;
-    display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 2em;
+  text-align: center;
+  z-index: 1000;
+  display: none;
 }
 
 @media screen and (orientation: portrait) {
-    body {
-        background-color: #f0f0f0;
-    }
+  body {
+    background-color: #f0f0f0;
+  }
 
-    .links-container a{
-        color: black;
-    }
+  .links-container a {
+    color: black;
+  }
 }
 
 .submit-button {
   margin-top: 5px;
   padding: 10px;
   border: none;
-  background-color: #6990F2;
+  background-color: #6990f2;
   color: white;
   font-size: 16px;
   border-radius: 5px;
@@ -196,13 +196,17 @@ section .details span{
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .success-message {
   background-color: #fff;
-  color: #6990F2;
+  color: #6990f2;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -210,13 +214,13 @@ section .details span{
 
 .success-message h2 {
   margin-bottom: 10px;
-  color: #6990F2;
+  color: #6990f2;
   font-size: 24px;
 }
 
 #ok-button {
   padding: 10px 15px;
-  background-color: #6990F2;
+  background-color: #6990f2;
   color: white;
   border: none;
   border-radius: 5px;
@@ -226,5 +230,5 @@ section .details span{
 }
 
 #ok-button:hover {
-  background-color: #5679B3;
+  background-color: #5679b3;
 }

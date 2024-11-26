@@ -1,11 +1,11 @@
 const form = document.querySelector("form"),
-fileInput = document.querySelector(".file-input"),
-progressArea = document.querySelector(".progress-area"),
-uploadedArea = document.querySelector(".uploaded-area");
+  fileInput = document.querySelector(".file-input"),
+  progressArea = document.querySelector(".progress-area"),
+  uploadedArea = document.querySelector(".uploaded-area");
 submitButton = document.querySelector(".submit-button");
-loadingOverlay = document.getElementById("loading-overlay"),
-successOverlay = document.getElementById("success-overlay"),
-okButton = document.getElementById("ok-button");
+(loadingOverlay = document.getElementById("loading-overlay")),
+  (successOverlay = document.getElementById("success-overlay")),
+  (okButton = document.getElementById("ok-button"));
 
 let uploadedFilesCount = 0;
 
@@ -23,13 +23,13 @@ submitButton.addEventListener("click", (e) => {
   e.preventDefault();
 });
 
-fileInput.onchange = ({target}) => {
+fileInput.onchange = ({ target }) => {
   const files = target.files;
   if (files.length > 0) {
-    Array.from(files).forEach(file => {
+    Array.from(files).forEach((file) => {
       let fileName = file.name;
       if (fileName.length >= 12) {
-        let splitName = fileName.split('.');
+        let splitName = fileName.split(".");
         fileName = splitName[0].substring(0, 13) + "... ." + splitName[1];
       }
       uploadFile(file);
@@ -40,12 +40,14 @@ fileInput.onchange = ({target}) => {
 function uploadFile(file) {
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "php/document.php");
-  
-  xhr.upload.addEventListener("progress", ({loaded, total}) => {
+
+  xhr.upload.addEventListener("progress", ({ loaded, total }) => {
     let fileLoaded = Math.floor((loaded / total) * 100);
     let fileTotal = Math.floor(total / 1000);
     let fileSize;
-    (fileTotal < 1024) ? fileSize = fileTotal + " KB" : fileSize = (loaded / (1024 * 1024)).toFixed(2) + " MB";
+    fileTotal < 1024
+      ? (fileSize = fileTotal + " KB")
+      : (fileSize = (loaded / (1024 * 1024)).toFixed(2) + " MB");
 
     let progressHTML = `<li class="row">
                           <i class="fas fa-file-alt"></i>
@@ -77,11 +79,11 @@ function uploadFile(file) {
       uploadedArea.insertAdjacentHTML("afterbegin", uploadedHTML);
 
       uploadedFilesCount++;
-      
+
       if (uploadedFilesCount >= 3) {
-        submitButton.style.display = 'block';
+        submitButton.style.display = "block";
         submitButton.disabled = false;
-        submitButton.classList.remove('disabled');
+        submitButton.classList.remove("disabled");
       }
     }
   });
@@ -94,11 +96,11 @@ function uploadFile(file) {
 submitButton.addEventListener("click", (e) => {
   e.preventDefault();
 
-  loadingOverlay.style.display = 'flex';
+  loadingOverlay.style.display = "flex";
 
   setTimeout(() => {
-      loadingOverlay.style.display = 'none';
-      document.getElementById('success-overlay').style.display = 'flex';
+    loadingOverlay.style.display = "none";
+    document.getElementById("success-overlay").style.display = "flex";
   }, 3000);
 });
 
@@ -107,26 +109,26 @@ okButton.addEventListener("click", () => {
 });
 
 function checkOrientation() {
-    const orientationLock = document.getElementById('orientation-lock');
-    
-    if (window.innerWidth <= 1220) {
-        if (window.innerHeight < window.innerWidth) {
-            orientationLock.style.display = 'flex';
-        } else {
-            orientationLock.style.display = 'none';
-        }
+  const orientationLock = document.getElementById("orientation-lock");
+
+  if (window.innerWidth <= 1220) {
+    if (window.innerHeight < window.innerWidth) {
+      orientationLock.style.display = "flex";
     } else {
-        if (document.body.classList.contains('mobile-view')) {
-            if (window.innerHeight < window.innerWidth) {
-                orientationLock.style.display = 'flex';
-            } else {
-                orientationLock.style.display = 'none';
-            }
-        } else {
-            orientationLock.style.display = 'none';
-        }
+      orientationLock.style.display = "none";
     }
+  } else {
+    if (document.body.classList.contains("mobile-view")) {
+      if (window.innerHeight < window.innerWidth) {
+        orientationLock.style.display = "flex";
+      } else {
+        orientationLock.style.display = "none";
+      }
+    } else {
+      orientationLock.style.display = "none";
+    }
+  }
 }
 
-window.addEventListener('resize', checkOrientation);
-window.addEventListener('DOMContentLoaded', checkOrientation);
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("DOMContentLoaded", checkOrientation);

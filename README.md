@@ -1,6 +1,7 @@
 # [PROHub - Professional Resource Organization Hub](https://kashiwagiren.github.io/PROHub/)
 
 ## Quick Access Index
+
 - [Introduction](#introduction)
 - [Objectives](#objectives)
 - [Who is this for?](#who-is-this-for)
@@ -43,6 +44,7 @@ This platform aims to streamline the process of hiring qualified experts while f
 ## Why ProHub?
 
 Finding reliable professionals can be a daunting task. ProHub simplifies this process by:
+
 - Providing verified professionals to ensure quality service.
 - Offering a user-friendly platform to connect clients with experts quickly and easily.
 - Allowing clients to browse through professionals based on ratings, credentials, and reviews.
@@ -52,6 +54,7 @@ Finding reliable professionals can be a daunting task. ProHub simplifies this pr
 ## How ProHub Works
 
 ### For Clients:
+
 1. **Sign Up / Log In**: Create an account or log in to access the platform.
 2. **Search for Services**: Browse or search for professionals in your area.
 3. **View Professional Profiles**: Review credentials, ratings, and client reviews.
@@ -59,6 +62,7 @@ Finding reliable professionals can be a daunting task. ProHub simplifies this pr
 5. **Leave Feedback**: Rate and review the professional after the job is done.
 
 ### For Professionals:
+
 1. **Sign Up / Log In**: Register and complete your profile, uploading all necessary credentials for verification.
 2. **Credential Verification**: Submit qualifications for review to become a verified professional.
 3. **List Your Services**: Specify the services you offer and make your profile visible to potential clients.

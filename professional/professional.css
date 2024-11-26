@@ -27,7 +27,7 @@ nav .logo {
   width: auto;
   height: 60px;
   margin-left: 10px;
-} 
+}
 
 .links-container {
   height: 100%;
@@ -90,7 +90,7 @@ nav .home-link {
   margin: 10px 0;
 }
 
-.star-rating  {
+.star-rating {
   color: gold;
   margin-right: 5px;
   transition: transform 0.3s;
@@ -113,7 +113,6 @@ nav .home-link {
 .star-rating2 i:hover {
   transform: scale(1.2);
 }
-
 
 .Services-content {
   margin: 50px auto;
@@ -194,9 +193,9 @@ nav .home-link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Padding inside the form */
-  max-width: 1658.5px; /* Maximum width of the form */
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 1658.5px;
   background-color: #2e2e2e;
   width: 90%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -204,79 +203,84 @@ nav .home-link {
 
 .add-service-header {
   display: flex;
-  justify-content: space-between; /* Space out header elements */
-  align-items: center; /* Center items vertically */
-  margin-bottom: 20px; /* Space below header */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 h2 {
   margin-left: 20px;
-  font-size: 1.8rem; /* Header font size */
+  font-size: 1.8rem;
   color: white;
 }
 
 .form-row {
-  display: flex; /* Enable flexbox for the row */
-  align-items: center; /* Center items vertically */
-  gap: 20px; /* Space between elements */
-  margin-bottom: 20px; /* Space below the row */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
-.service-input, .verification-section, .upload-section {
-  display: flex; /* Enable flexbox for these sections */
-  flex-direction: column; /* Stack label and input/select vertically */
-  align-items: flex-start; /* Align items to the start */
-  width: 100%; /* Full width of parent */
+.service-input,
+.verification-section,
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
 }
 
 label {
   margin-top: 20px;
-  font-size: 1rem; /* Label font size */
-  margin-bottom: 5px; /* Space below label */
+  font-size: 1rem;
+  margin-bottom: 5px;
   color: white;
 }
 
-input[type="text"], select, input[type="file"] {
-  width: 100%;           /* Full width within its container */
-  max-width: 600px;     /* Maximum width of the input/select */
-  padding: 10px;        /* Padding inside the input/select */
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 5px;   /* Rounded corners */
-  font-size: 1rem;      /* Font size for input/select */
-  transition: border-color 0.3s; /* Smooth transition for border color */
+input[type="text"],
+select,
+input[type="file"] {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
 input[type="file"] {
-  background-color: #f8f9fa; /* Light background for file input */
+  background-color: #f8f9fa;
 }
 
-input[type="text"]:focus, select:focus {
-  border-color: #007bff; /* Border color on focus */
-  outline: none; /* Remove outline */
+input[type="text"]:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
 button#save-changes-button {
   margin-right: 10px;
-  background-color: #007bff; /* Button color */
-  color: white;               /* Text color */
-  border: none;               /* Remove default border */
-  padding: 10px 15px;         /* Button padding */
-  font-size: 1rem;            /* Font size */
-  cursor: pointer;            /* Pointer cursor on hover */
-  border-radius: 5px;        /* Rounded corners */
-  transition: background-color 0.3s; /* Smooth transition for hover */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
 
 button#save-changes-button:hover {
-  background-color: #0056b3; /* Darker color on hover */
+  background-color: #0056b3;
 }
 
 .verification-note {
-  font-size: 0.9rem; /* Slightly smaller font size */
+  font-size: 0.9rem;
   color: white;
-  margin-top: 20px; /* Space above the note */
-  padding: 10px; /* Padding around the note */
-  border-radius: 5px; /* Rounded corners */
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .modal {
@@ -324,7 +328,6 @@ button#save-changes-button:hover {
   text-align: center;
 }
 
-/* Same styles for modals */
 .modal {
   position: fixed;
   top: 0;
@@ -361,7 +364,9 @@ textarea {
   resize: none;
 }
 
-input[type="text"], select, input[type="file"] {
+input[type="text"],
+select,
+input[type="file"] {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
