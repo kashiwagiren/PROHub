@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="client.css">
+    <title>Chat Application</title>
+</head>
+<body>
+
+    <main class="main-content">
+        <!-- Modal -->
+        <div id="chatModal" class="modal">
+            <div class="modal-content">
+                <p>
+                    This conversation will not be saved. Please transfer to another messaging app if you plan to continue discussing sensitive or critical information.
+                </p>
+                <button id="proceedChat" class="btn">Proceed</button>
+            </div>
+        </div>
+
+        <!-- Chat Box -->
+        <div id="chatBox" class="chat-box hidden">
+            
+            <!-- Chat Messages -->
+            <div id="chatMessages" class="chat-messages"></div>
+            <!-- Chat Input -->
+            <div class="chat-input">
+                <textarea id="messageInput" placeholder="Type your message here..."></textarea>
+                <div class="chat-controls">
+                    <input type="file" id="imageUpload" accept="image/*" class="btn" />
+                    <div class="chat-controls-buttons">
+                        <button id="sendLocation" class="btn">📍</button>
+                        <button id="sendMessage" class="btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back Button -->
+        <button id="backButton" class="btn">Back</button>
+    </main>
+
+    <script src="client.js"></script>
+</body>
+</html>
