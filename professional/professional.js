@@ -201,6 +201,7 @@ saveChangesButton.addEventListener('click', function () {
         document.getElementById('services-content').style.display = 'block';
     } else if (saveChangesButton.textContent === 'Save Changes') {
         // Show the modal
+        document.getElementById('add-service-section').style.display = 'none';
         verificationModal.style.display = 'flex';
     }
 });

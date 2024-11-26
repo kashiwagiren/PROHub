@@ -200,7 +200,6 @@ nav .home-link {
   background-color: #2e2e2e;
   width: 90%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
 }
 
 .add-service-header {
