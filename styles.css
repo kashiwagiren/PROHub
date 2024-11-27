@@ -32,6 +32,7 @@
 .intro-content {
   text-align: center;
   user-select: none;
+  transition: ease 0.5s;
 }
 
 .intro-logo {
@@ -45,6 +46,7 @@
 
 .hidden {
   display: none !important;
+  transition: ease 0.5s;
 }
 
 .proceed-button {
