@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROHub | Home</title>
-    <link rel="icon" type="image/x-icon" href="./images/ph.ico">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="icon" type="image/x-icon" href="./images/ph.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
   </head>
-  <body>  
+  <body>
     <header>
       <nav>
-        <img src="images/logo.png" alt="logo" class="logo">
-        <input type="checkbox" id="sidebar-active">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <input type="checkbox" id="sidebar-active" />
         <label for="sidebar-active" class="open-sidebar-button">
-          <svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="80" fill="#e8eaed">
-            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="60"
+            viewBox="0 -960 960 960"
+            width="80"
+            fill="#e8eaed"
+          >
+            <path
+              d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
           </svg>
         </label>
         <label id="overlay" for="sidebar-active"></label>
         <div class="links-container">
           <label for="sidebar-active" class="close-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="80" fill="#e8eaed">
-              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="60"
+              viewBox="0 -960 960 960"
+              width="80"
+              fill="#e8eaed"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
             </svg>
           </label>
           <a href="./" class="home-link">Home</a>
-          </li>
           <a href="./discover/discover.html?postcode=6000">Discover</a>
-          </li>
           <a href="./login/login.html" class="login">Login</a>
         </div>
         <div class="account-links">
@@ -42,81 +59,131 @@
       <div class="container">
         <section class="one">
           <div class="content">
-              <h1 class="one-text">Find the perfect <br>professional for you</h1>
-              <p class="one-sub">Get free quotes within minutes</p>
-              <form action="discover/discover.html" method="get" class="search">
-                  <input type="text" name="search" class="service-input" placeholder="What service are you looking for?" required>
-                  <input type="text" name="postcode" class="postcode-input" placeholder="Postcode" required>
-                  <input type="hidden" name="origin" value="section-one">
-                  <button type="submit" class="search-button">Search</button>
-              </form>
-              <p class="popular-services">Popular Services in your Area: Automotive Services, House Services, Electronics</p>
+            <h1 class="one-text">
+              Find the perfect <br />professional for you
+            </h1>
+            <p class="one-sub">Get free quotes within minutes</p>
+            <form action="discover/discover.html" method="get" class="search">
+              <input
+                type="text"
+                name="search"
+                class="service-input"
+                placeholder="What service are you looking for?"
+                required
+              />
+              <input
+                type="text"
+                name="postcode"
+                class="postcode-input"
+                placeholder="Postcode"
+                required
+              />
+              <input type="hidden" name="origin" value="section-one" />
+              <button type="submit" class="search-button">Search</button>
+            </form>
+            <p class="popular-services">
+              Popular Services in your Area: Automotive Services, House
+              Services, Electronics
+            </p>
           </div>
-      </section>
+        </section>
         <section class="two" id="section-two">
-            <div class="row">
-              <div class="col">
-                <h2 class="text-center">
-                  Discover
-                </h2>
+          <div class="row">
+            <div class="col">
+              <h2 class="text-center">Discover</h2>
+            </div>
+          </div>
+          <div class="discover-grid">
+            <div class="card">
+              <a
+                href="../PROHub/discover/discover.html?search=Automotive%20Services&postcode=6000&origin=section-two"
+              >
+                <img
+                  src="./images/services-car.png"
+                  alt="Automotive Services"
+                />
+                <p>Automotive Services</p>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="discover/discover.html?search=House%20Services&postcode=6000&origin=section-two"
+              >
+                <img src="./images/services-house.png" alt="House Services" />
+                <p>House Services</p>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="discover/discover.html?search=Electronics%20Services&postcode=6000&origin=section-two"
+              >
+                <img
+                  src="./images/services-laptop.png"
+                  alt="Electronics Services"
+                />
+                <p>Electronics Services</p>
+              </a>
+            </div>
+            <div class="card">
+              <a
+                href="discover/discover.html?search=Pet%20Services&postcode=6000&origin=section-two"
+              >
+                <img src="./images/services-pet.png" alt="Pet Services" />
+                <p>Pet Services</p>
+              </a>
+            </div>
+            <div class="card">
+              <a href="discover/discover.html?postcode=6000&origin=section-two">
+                <img
+                  src="./images/services-otherservices.png"
+                  alt="Other services"
+                />
+                <p>Other services</p>
+              </a>
+            </div>
+          </div>
+          <div
+            class="slider"
+            reverse="true"
+            style="--width: 639px; --height: 420px; --quantity: 9"
+          >
+            <div class="list">
+              <div class="item" style="--position: 1">
+                <img src="images/gardening.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 2">
+                <img src="images/finance.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 3">
+                <img src="images/tutor.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 4">
+                <img src="images/roofing.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 5">
+                <img src="images/training.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 6">
+                <img src="images/car.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 7">
+                <img src="images/plumbing.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 8">
+                <img src="images/accounting.jpg" alt="" />
+              </div>
+              <div class="item" style="--position: 9">
+                <img src="images/web.jpg" alt="" />
               </div>
             </div>
-            <div class="discover-grid">
-              <div class="card">
-                <a href="../PROHub/discover/discover.html?search=Automotive%20Services&postcode=6000&origin=section-two">
-                  <img src="./images/services-car.png" alt="Automotive Services">
-                  <p>Automotive Services</p>
-                </a>
-              </div>
-              <div class="card">
-                <a href="discover/discover.html?search=House%20Services&postcode=6000&origin=section-two">
-                  <img src="./images/services-house.png" alt="House Services">
-                  <p>House Services</p>
-                </a>
-              </div>
-              <div class="card">
-                <a href="discover/discover.html?search=Electronics%20Services&postcode=6000&origin=section-two">
-                  <img src="./images/services-laptop.png" alt="Electronics Services">
-                  <p>Electronics Services</p>
-                </a>
-              </div>
-              <div class="card">
-                <a href="discover/discover.html?search=Pet%20Services&postcode=6000&origin=section-two">
-                  <img src="./images/services-pet.png" alt="Pet Services">
-                  <p>Pet Services</p>
-                </a>
-              </div>
-              <div class="card">
-                <a href="discover/discover.html?postcode=6000&origin=section-two">
-                  <img src="./images/services-otherservices.png" alt="Other services">
-                  <p>Other services</p>
-                </a>
-              </div>
-            </div>
-            <div class="slider" reverse="true" style="
-              --width: 639px;
-              --height: 420px;
-              --quantity: 9;
-            ">
-              <div class="list">
-                  <div class="item" style="--position: 1"><img src="images/gardening.jpg" alt=""></div>
-                  <div class="item" style="--position: 2"><img src="images/finance.jpg" alt=""></div>
-                  <div class="item" style="--position: 3"><img src="images/tutor.jpg" alt=""></div>
-                  <div class="item" style="--position: 4"><img src="images/roofing.jpg" alt=""></div>
-                  <div class="item" style="--position: 5"><img src="images/training.jpg" alt=""></div>
-                  <div class="item" style="--position: 6"><img src="images/car.jpg" alt=""></div>
-                  <div class="item" style="--position: 7"><img src="images/plumbing.jpg" alt=""></div>
-                  <div class="item" style="--position: 8"><img src="images/accounting.jpg" alt=""></div>
-                  <div class="item" style="--position: 9"><img src="images/web.jpg" alt=""></div>
-              </div>
-            </div>
+          </div>
         </section>
         <section class="three">
           <div class="content-three">
             <h1>Meet Our Developers</h1>
             <div class="pers">
               <div class="pe">
-                <img src="images/dev1.jpg" alt="dev1">
+                <img src="images/dev1.jpg" alt="dev1" />
                 <div class="p-name">Gil</div>
                 <div class="p-dev">Developer/Designer</div>
                 <div class="p-sm">
@@ -129,7 +196,7 @@
                 </div>
               </div>
               <div class="pe">
-                <img src="images/dev2.jpg" alt="dev2">
+                <img src="images/dev2.jpg" alt="dev2" />
                 <div class="p-name">Gian</div>
                 <div class="p-dev">Developer/Designer</div>
                 <div class="p-sm">
@@ -142,7 +209,7 @@
                 </div>
               </div>
               <div class="pe">
-                <img src="images/dev3.jpg" alt="dev3">
+                <img src="images/dev3.jpg" alt="dev3" />
                 <div class="p-name">Kieth</div>
                 <div class="p-dev">Developer/Designer</div>
                 <div class="p-sm">
@@ -154,11 +221,11 @@
                   </a>
                 </div>
               </div>
-              <div class="text" style="font-size: 20px;">
-                Did you like it? Click this 
+              <div class="text" style="font-size: 20px">
+                Did you liked it? Click this
                 <a href="https://github.com/kashiwagiren/PROHub">
-                    <i class="fab fa-github" style="font-size: 25px;"></i>
-                </a> 
+                  <i class="fab fa-github" style="font-size: 25px"></i>
+                </a>
                 and leave a star on it.
               </div>
             </div>
@@ -171,20 +238,59 @@
             <p>Mobile: (098) 765-4321</p>
             <p>Office Hours: Mon-Fri, 9am-5pm</p>
             <form>
-              <input type="text" name="first-name" placeholder="First Name" required>
-              <input type="text" name="last-name" placeholder="Last Name" required>
-              <input type="email" name="email" placeholder="Email" required>
-              <textarea name="help" placeholder="What can we help you with?" required></textarea>
+              <input
+                type="text"
+                name="first-name"
+                placeholder="First Name"
+                required
+              />
+              <input
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+                required
+              />
+              <input type="email" name="email" placeholder="Email" required />
+              <textarea
+                name="help"
+                placeholder="What can we help you with?"
+                required
+              ></textarea>
               <button type="submit">Submit</button>
             </form>
           </div>
-          <div class="footer" id="footer" style="display: none;"> &copy; 2024 PROHub. All rights reserved. </div>
+          <div class="footer" id="footer" style="display: none">
+            &copy; 2024 PROHub. All rights reserved.
+          </div>
         </section>
+      </div>
+      <div id="intro-overlay" class="hidden">
+        <div class="intro-content">
+          <img src="images/logo.png" alt="Logo" class="intro-logo" />
+          <div class="intro-message">
+            <p>This is a Test version. Not indicative of final product.</p>
+            <button id="proceed-button" class="proceed-button">
+              Click to Proceed
+            </button>
+          </div>
+          <div class="country-select hidden">
+            <p>Select your country:</p>
+            <select>
+              <option value="us">United States</option>
+              <option value="ph">Philippines</option>
+              <option value="ot">Other</option>
+            </select>
+            <button id="start-button" class="start-button">Start</button>
+          </div>
+        </div>
       </div>
     </main>
     <div id="orientation-lock">
       <div>
-        <p>Please rotate your device to portrait mode. We do not support landscape for mobile devices.</p>
+        <p>
+          Please rotate your device to portrait mode. We do not support
+          landscape for mobile devices.
+        </p>
       </div>
     </div>
     <script src="script.js"></script>

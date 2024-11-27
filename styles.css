@@ -7,6 +7,71 @@
   font-family: "Poppins", sans-serif;
 }
 
+#intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#intro-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+  display: none; /* Prevents rendering entirely if hidden */
+}
+
+.intro-content {
+  text-align: center;
+}
+
+.intro-logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.proceed-button {
+  padding: 10px;
+
+  background-color: #007bff;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 5px;
+
+  margin-top: 10px;
+
+  cursor: pointer;
+
+  transition: ease 0.5s;
+}
+
+.proceed-button:hover {
+  transform: scale(1.2);
+
+  transition: ease 0.5s;
+
+  background-color: royalblue;
+}
+
+.start-button:hover {
+  cursor: pointer;
+}
+
 #orientation-lock {
   position: fixed;
   top: 0;

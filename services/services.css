@@ -6,10 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-html{
-  background-color:#1e1e1e;
+html {
+  background-color: #1e1e1e;
 }
-/* Navbar Styling */
+
 nav {
   position: fixed;
   top: 0;
@@ -28,17 +28,15 @@ nav .logo {
   margin-left: -10px;
 }
 
-.home{
+.home {
   display: flex;
   align-items: center;
 }
 
-
-.login{
+.login {
   display: flex;
   align-items: center;
   margin-left: auto;
-  
 }
 
 .home a,
@@ -49,11 +47,9 @@ nav .logo {
   font-size: 1.5em;
 }
 
-
 .home a:hover,
 .login a:hover {
   color: royalblue;
-
 }
 
 @media (max-width: 768px) {
@@ -66,51 +62,49 @@ nav .logo {
   .login,
   .account-links {
     width: 100%;
-    justify-content: center; /* Center align for smaller screens */
+    justify-content: center;
   }
 }
 
 .center-title {
-  text-align: center; /* Center text horizontally */
-  font-size: 2.5em; /* Font size */
-  color: #ffffff; /* Text color */
-  margin-top: 200px; /* Space above the title */
-  margin-bottom: 100px; /* Space below the title */
+  text-align: center;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 
-/* Optional: If you want to give a background color to the title area */
 h1 {
-  padding: 10px; /* Padding for visual spacing */
-  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  border-radius: 10px;
 }
-
 
 .shop-content {
   margin-top: 200px;
-  display: flex; /* Use flexbox for alignment */
-  align-items: flex-start; /* Align items to the start (top) of the flex container */
-  background-color: #2c2c2c; /* Dark background for the box */
-  border-radius: 20px; /* Rounded corners */
-  padding: 50px; /* Space inside the box */
-  max-width: 1500px; /* Set a max width */
-  margin: 50px auto; /* Center the box horizontally with margin */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
-  justify-content: space-between; /* Space between items */
-  position: relative; /* Relative positioning for absolute children */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  display: flex;
+  align-items: flex-start;
+  background-color: #2c2c2c;
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 1500px;
+  margin: 50px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
 .shop-content:hover {
-  transform: scale(1.006); /* Slightly increase the size on hover */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Optional: enhance shadow effect */
+  transform: scale(1.006);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
 
 .shop-content img.shop-img {
-  width: 300px; /* Set a fixed width for the image */
-  height: 200px; /* Set a fixed height for the image */
-  object-fit: cover; /* Crop the image to fit, maintaining the aspect ratio */
-  border-radius: 10px; /* Rounded corners for image */
-  margin-right: 20px; /* Space between the image and text */
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
 }
 
 .text-content {
@@ -123,30 +117,27 @@ h1 {
 }
 
 .shop-content h2 {
-  font-size: 2.5em; /* Title size */
-  color: #ffffff; /* Bright text for visibility */
-  margin: 0; /* Remove default margins */
+  font-size: 2.5em;
+  color: #ffffff;
+  margin: 0;
 }
 
 .shop-content h3 {
-  font-size: 1.5em; /* Subtitle size */
-  color: #dddddd; /* Slightly lighter text */
-  margin: 0; /* Remove default margins */
+  font-size: 1.5em;
+  color: #dddddd;
+  margin: 0;
 }
 
-/* Adjust underline spacing */
 .underline {
-  width: 500px; /* Full width */
-  height: 3px; /* Line height */
-  background-color: rgb(252, 246, 246); /* Color of the line */
-  margin: 10px 0; /* Space above and below the line */
-  align-self: flex-start; /* Align underline to the left */
-  
+  width: 500px;
+  height: 3px;
+  background-color: rgb(252, 246, 246);
+  margin: 10px 0;
+  align-self: flex-start;
 }
 
-/* Adjust padding to add space above the text */
 .text-content {
-  padding-top: 10px; /* Adjust this value for more space above the headings */
+  padding-top: 10px;
 }
 
 .contact-button1 {
@@ -164,54 +155,72 @@ h1 {
 }
 
 .contact-button1:hover {
-  background-color: royalblue; /* Change to royal blue on hover */
+  background-color: royalblue;
 }
 
 .contact-button2 {
-  background-color: #6ea4f5b4; /* Background color */
-  color: white; /* Text color */
-  border: none; /* Remove border */
-  padding: 10px 20px; /* Add some padding */
-  font-size: 20px; /* Font size */
-  cursor: pointer; /* Cursor style */
-  border-radius: 10px; /* Rounded corners */
-  margin-top: 155px; /* Reduce this value to move the button closer */
-  margin-left: 10px; /* Move to the left slightly */
-  position: relative; /* Position relative for finer control */
+  background-color: #6ea4f5b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 155px;
+  margin-left: 10px;
+  position: relative;
 }
 
 .contact-button2:hover {
-  background-color: royalblue; /* Change to royal blue on hover */
+  background-color: royalblue;
 }
 
 .star-rating {
-  display: flex; /* Use flexbox for horizontal arrangement */
-  margin-top: 10px; /* Add some space above the stars */
+  display: flex;
+  margin-top: 10px;
 }
 
 .star-rating i {
-  font-size: 30px; /* Adjust the size of the stars */
-  color: gold; /* Set the color of the stars */
-  margin-right: 5px; /* Add some space between stars */
+  font-size: 30px;
+  color: gold;
+  margin-right: 5px;
   margin-top: 55px;
 }
 
 .social-icons {
-  position: absolute; /* Position it absolutely within the shop content */
-  top: 60px; /* Adjust this value to move it down from the top */
-  right: 80px; /* Adjust this value to move it in from the right */
-  display: flex; /* Use flexbox for horizontal alignment */
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  display: flex;
 }
 
 .social-icon {
-  color: #ffffff; /* White color for icons */
-  font-size: 24px; /* Adjust size as needed */
-  margin-left: 40px; /* Space between icons */
-  text-decoration: none; /* Remove underline from links */
+  color: #ffffff;
+  font-size: 24px;
+  margin-left: 40px;
+  text-decoration: none;
 }
 
 .social-icon:hover {
-  color: #6ea4f5b4; /* Change color on hover */
+  color: #6ea4f5b4;
 }
 
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #6ea4f5;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+  position: relative;
+  transition: transform 0.3s ease;
+  left: 600px;
+  top: 260px;
+}
 
+.btn:hover {
+  background-color: #265df2;
+  transform: scale(1.006);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}

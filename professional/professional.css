@@ -94,6 +94,7 @@ nav .home-link {
   color: gold;
   margin-right: 5px;
   transition: transform 0.3s;
+  display: none;
 }
 
 .star-rating i:hover {
@@ -108,6 +109,7 @@ nav .home-link {
   align-items: center;
   position: absolute;
   margin-left: 580px;
+  left: 725px;
 }
 
 .star-rating2 i:hover {
