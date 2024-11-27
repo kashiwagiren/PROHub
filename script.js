@@ -44,12 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     startButton.addEventListener("click", function () {
       introOverlay.classList.add("hidden");
-
+      introOverlay.style.transition = "0.5s ease-in-out";
       sessionStorage.setItem("hasSeenIntro", "true");
 
       setTimeout(() => {
         introOverlay.style.display = "none";
-        introOverlay.style.transition = "0.5s ease-in-out";
       }, 500);
     });
   }
@@ -80,9 +79,8 @@ const surveyLink = document.getElementById("choose-survey-link");
 const popUp = document.getElementById("pop-up-survey-id");
 
 surveyLink.addEventListener("click", (event) => {
-  event.preventDefault(); // Prevent default link behavior
+  event.preventDefault();
 
-  // Toggle visibility and opacity
   if (popUp.style.opacity === "0" || popUp.style.opacity === "") {
     popUp.style.opacity = "1";
     popUp.style.visibility = "visible";
@@ -92,15 +90,9 @@ surveyLink.addEventListener("click", (event) => {
   }
 });
 
-// Close pop-up if clicking outside
 document.addEventListener("click", (event) => {
   if (!surveyLink.contains(event.target) && !popUp.contains(event.target)) {
     popUp.style.opacity = "0";
     popUp.style.visibility = "hidden";
   }
 });
-/*
-document.getElementById("choose-survey-link").addEventListener("click", function () {
-  document.getElementById("pop-up-survey-id").style.opacity = '1';
-});
-*/
